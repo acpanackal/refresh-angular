@@ -5,18 +5,12 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses.component';
 
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    CoursesComponent
-  ],
-  imports: [
-    BrowserModule,
-    HttpClientModule
-  ],
+  declarations: [AppComponent, CoursesComponent],
+  imports: [BrowserModule, HttpClientModule],
   providers: [CoursesService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
